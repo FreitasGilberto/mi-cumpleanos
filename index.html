@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <style>
+      /* Estilos por defecto */
+      body {
+        background-color: black;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-size: 20px;
+      }
+
+      /* Estilos para pantallas pequeñas */
+      @media only screen and (max-width: 600px) {
+        body {
+          font-size: 16px;
+        }
+      }
+
+      /* Estilos para pantallas medianas */
+      @media only screen and (min-width: 600px) and (max-width: 900px) {
+        body {
+          font-size: 18px;
+        }
+      }
+
+      /* Estilos para pantallas grandes */
+      @media only screen and (min-width: 900px) {
+        body {
+          font-size: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // Obtenemos la fecha actual
+      const hoy = new Date();
+
+      // Verificamos si es 7 de marzo
+      if (hoy.getDate() === 7 && hoy.getMonth() === 2) {
+        document.body.innerHTML = "Hoy es mi cumpleaños";
+      } else {
+        document.body.innerHTML = "Todavía no es mi cumpleaños";
+      }
+    </script>
+  </body>
+</html>
